@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing:border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: "outfit";
+  position: relative;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 20px 5%;
+  gap: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000;
+  
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  column-gap: 40px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.navButton {
+  padding: 15px 28px;
+  border-radius: 50px;
+  background: linear-gradient(260deg, orange, purple);
+  font-size: 17px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.navButton:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  position: relative;
+}
+
+.logo h1 {
+  font-family: "Caveat";
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.theme_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  z-index: -1;
+}
+
+.navLinks li {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+  align-items: center;
+  /* justify-content:center; */
+}
+
+.AnchorL-Link {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  .navContainer {
+    padding: 15px 20px; 
+    gap: 20px;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;  
+    height: 100vh; 
+    background: black;
+    width: 40%; 
+    padding: 60px 20px; 
+    text-align: center;
+    row-gap: 25px;
+    transition: right 0.4s ease-in-out; 
+     z-index: 10; 
+  }
+
+
+  .nav-mob-open {
+    display: block;
+    width: 35px;
+    cursor: pointer;
+  }
+
+  .nav-mob-close {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 10px;
+  }
+
+  .navButton {
+    display: none; 
+  }
+}
+
+@media (min-width: 769px) {
+
+  .nav-mob-open,
+  .nav-mob-close {
+    display: none;
+  }
+
+  
+}
+

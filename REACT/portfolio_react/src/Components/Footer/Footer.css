@@ -1,0 +1,9 @@
+.footerSection{
+      text-align: center;
+      padding : 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      background-color: #0d0d0d; 
+      border-top: 1px solid #222; 
+      letter-spacing: 0.5px
+}

@@ -1,0 +1,67 @@
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 200px 50px;
+  gap: 50px; 
+  flex-wrap: wrap; 
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  row-gap: 25px;
+  max-width: 800px;
+
+}
+
+.heroText h1 {
+  font-size: clamp(2rem, 5vw, 3.75rem); 
+  background: linear-gradient(267deg, #da7c25 10%, #b923e1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroText h2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 500;
+}
+
+.heroText p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.profileImg {
+  height: auto;
+  max-width: 300px; 
+  width: 100%; 
+  border-radius: 20px;
+}
+
+.heroButtonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 20px;
+  text-decoration :none;
+}
+
+.heroButton {
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: linear-gradient(260deg, orange, purple);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border:none;
+}
+
+.heroButton:hover {
+  transform: scale(1.05);
+}
+
