@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="container">
+
+  <h1 class="hdr-cls"> Rock Paper Scissor</h1>
+  <div class="play-btn">
+    <button class="btn-cls"><img class="img-cls js-img-cls" src="./images/rock-emoji.png" onclick = "gamePlay('Rock');"></button>
+    <button class="btn-cls"><img class="img-cls js-img-cls" src="./images/paper-emoji.png" onclick = "gamePlay('Paper');"></button>
+    <button class="btn-cls"><img class="img-cls js-img-cls" src="./images/scissors-emoji.png" onclick = "gamePlay('Scissors');"></button>
+  </div> 
+  <div class="result-cls result"></div>
+  <div class="score-cls-js result-cls"></div>
+  <div class="playButton">
+    <button class=" js-img-cls reset-btn" onclick = "gamePlay('Reset');">Reset Score</button>
+    <button class = "js-img-cls reset-btn auto-js" onclick = "autoPlay();">Auto Play</button>
+  </div>
+  
+
+</div>
+  
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
