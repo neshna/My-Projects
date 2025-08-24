@@ -1,0 +1,167 @@
+.header-section {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  height: 25px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.youtube-logo {
+  height: 20px;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgba(204, 204, 204, 1);
+  border-radius: 3px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+  /* set the default width to 0 to make it responsive*/
+}
+
+.search-bar::placeholder {
+  font-size: 16px;
+}
+
+.search-btn {
+  width: 60px;
+  height: 40px;
+  border: 1px solid rgba(204, 204, 204, 1);
+  background-color: rgb(248, 246, 246);
+  margin-left: -3px;
+  border-radius: 3px;
+}
+
+.voice-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(248, 246, 246);
+  margin-left: 10px;
+}
+
+
+
+.search-icon {
+  height: 25px;
+}
+
+.voice-icon {
+  height: 24px;
+}
+
+.right-section {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
+  flex-shrink: 0;
+
+}
+
+.upload-icon {
+  height: 24px;
+}
+
+.youtube-app-icon {
+  height: 24px;
+}
+
+.notification-icon {
+  height: 24px;
+}
+
+.notification-icon-container {
+  position: relative;
+
+}
+
+.notifications-count {
+  position: absolute;
+  background-color: rgb(218, 2, 2);
+  color: white;
+  font-size: 11px;
+  right: -5px;
+  top: -2px;
+  padding: 2px 5px 2px 5px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+
+
+.current-user-picture {
+  height: 32px;
+  border-radius: 16px;
+}
+
+.voice-btn,
+.search-btn,
+.upload-icon-container,
+.youtube-app-icon-container,
+.notification-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn .tooltip,
+.voice-btn .tooltip,
+.upload-icon-container .tooltip,
+.youtube-app-icon-container .tooltip,
+.notification-icon-container .tooltip {
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding: 6px 8px 6px 8px;
+  font-size: 12px;
+  border-radius: 2px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+  /* To avoid showing the tooltip when hover over tooltip*/
+  white-space: nowrap;
+
+}
+
+.search-btn:hover .tooltip,
+.voice-btn:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-app-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
