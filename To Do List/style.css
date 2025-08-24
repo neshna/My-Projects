@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-css {
+  padding :6px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.add-btn-css , .delete-btn-css {
+
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.add-btn-css {
+  
+  background-color: green;
+
+}
+
+.delete-btn-css {
+
+  background-color: brown;
+
+}
+
+.grid-container-input , .grid-container-list{
+  
+  display:grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap :5px;
+  row-gap: 5px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.grid-container-input{
+    margin-bottom: 10px;
+}
