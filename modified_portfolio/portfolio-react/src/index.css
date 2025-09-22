@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding:0;
+    height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: "outfit";
+  position: relative;
+}
+
+
+/* .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+  */ 

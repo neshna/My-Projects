@@ -1,0 +1,141 @@
+/*.heroContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 200px 50px;
+  gap: 50px; 
+  flex-wrap: wrap; 
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  row-gap: 25px;
+  max-width: 800px;
+
+}
+
+.heroText h1 {
+  font-size: clamp(2rem, 5vw, 3.75rem); 
+  background: linear-gradient(267deg, #da7c25 10%, #b923e1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroText h2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 500;
+}
+
+.heroText p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.profileImg {
+  height: auto;
+  max-width: 300px; 
+  width: 100%; 
+  border-radius: 20px;
+}
+
+.heroButtonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 20px;
+  text-decoration :none;
+}
+
+.heroButton {
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: linear-gradient(260deg, orange, purple);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border:none;
+}
+
+.heroButton:hover {
+  transform: scale(1.05);
+}
+  */
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;   /* Stack vertically */
+  align-items: center;      /* Center items */
+  text-align: center;       /* Center text */
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+}
+
+.profileImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;       /* Circle image */
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.heroText h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-bottom: 0.5rem;
+}
+
+.heroText h2 {
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.heroText p {
+  font-size: clamp(0.9rem, 3.5vw, 1rem);
+  line-height: 1.6;
+  max-width: 600px;         /* Prevents text from stretching too wide */
+}
+
+.heroButtonContainer {
+  text-decoration: none;    /* Removes underline */
+}
+
+.heroButton {
+  background: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.heroButton:hover {
+  background: #0056b3;
+}
+
+/* ✅ Tablet & Desktop (Optional overrides) */
+@media (min-width: 768px) {
+  .heroContainer {
+    flex-direction: row;    /* Side by side */
+    justify-content: center;
+    text-align: left;
+    gap: 3rem;
+    padding: 4rem 2rem;
+  }
+
+  .heroText {
+    max-width: 600px;
+  }
+
+  .profileImg {
+    width: 220px;
+    height: 220px;
+  }
+}
+
