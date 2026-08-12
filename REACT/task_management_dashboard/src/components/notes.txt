@@ -1,0 +1,72 @@
+Delete - confirmation 
+======================
+const isConfirmed   =   window.confirm("Are you sure want to delete this task ?")
+    if (isConfirmed){
+      write Logic to delete here
+    }
+
+Current Date 
+============
+
+const today = new Date().toISOString().split("T")[0]
+
+new Date()  ->  new Date().toISOString() -> "2026-06-23T10:00:45.123Z".split("T") 
+->["2026-06-23", "10:00:45.123Z"][0] ->"2026-06-23"
+
+Feature :
+==========
+1.Sorting 
+
+sort method in array :
+array.sort() - sorts array ascending order
+array = [
+  {num:20 , date:"30-06-2026" , task:"React" } , 
+  {num:70 , date:"01-06-2026" , task:"HTML" } , 
+  {num:10 , date:"06-07-2026" , task:"CSS" }]
+
+filteredTasks.sort((a,b)=> new Date(b.createdDate) - new Date(a.createdDate))   - sort by date descending
+
+filteredTasks.sort((a,b)=> new Date(a.createdDate) - new Date(b.createdDate))   - sort by date ascending
+
+filteredTasks.sort((a,b)=> a.task.localeCompare(b.task))  - sort by alphabet a-z
+
+filteredTasks.sort((a,b)=> b.task.localeCompare(a.task)) - sort by alphabet z-a
+
+Toast Notification
+===================
+
+install - npm install react-toastify 
+import  - import { ToastContainer , toast } from "react-toastify"
+        - import "react-toastify/dist/ReactToastify.css";
+component -  <ToastContainer position="top-right" autoClose={2000} />
+ToastContainer - container where toast gets placed 
+toast   - object which has method to call the toasts
+
+eg : toast.success('completed successfully')
+      toast.error('Deleted Successfully)
+=> call these functions after delete task
+
+const priorityOrder = {
+  high: 1,
+  medium: 2,
+  low: 3,
+};
+
+const dueTodayTasks = tasks
+  .filter(1
+    (task) =>
+      task.dueDate === getToday() &&
+      task.status !== "done"
+  )
+  .sort((a, b) => {
+    if (priorityOrder[a.priority] !== priorityOrder[b.priority]) {
+      return priorityOrder[a.priority] - priorityOrder[b.priority];
+    }
+
+    return new Date(a.createdDate) - new Date(b.createdDate);
+  })
+  .slice(0, 3);
+
+
+
+    

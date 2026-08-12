@@ -1,0 +1,32 @@
+.task-header-section{
+  display : flex ;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.task-header-left{
+  display : flex ;
+  flex-direction: column;
+  gap:5px;
+}
+
+.task-header-left p {
+  font-size:13px;
+  color:rgba(82, 81, 81, 0.911);
+}
+
+.task-header-right button {
+  background-color: rgba(66, 30, 226, 0.719);
+  color : white;
+  border : none;
+  border-radius:10px;
+  padding : 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.task-header-right button:hover {
+  background-color: #5d42d1;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}

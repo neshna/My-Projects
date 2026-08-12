@@ -1,0 +1,105 @@
+.error{
+  color: red;
+  font-size: 12px;
+}
+
+.add-task-section {
+  margin: 20px;
+  display : flex;
+  flex-direction: column;
+  width : 500px;
+  gap:15px;
+  padding:20px;
+  background-color: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius : 10px;
+}
+
+.add-task-inputs {
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+.inputs{
+  border: 1.5px solid rgba(189, 179, 179, 0.466);
+  font-size:12px;
+  font-weight:500;
+  border-radius:5px;
+  padding:5px;
+}
+
+.inputs::placeholder {
+  font-size: 13px;
+  color: #999;
+  font-weight: 400;
+}
+
+.add-task-title input{
+  width:450px;
+  padding:10px;
+}
+
+.add-task-description textarea {
+  height: 70px;
+  width: 450px;
+  padding: 8px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.add-task-schedule{
+  display : flex; 
+  justify-content:space-between;
+}
+
+.add-task-combo{
+  width:140px;
+}
+
+label {
+  font-size: 13px;
+}
+
+.add-task-btn-sec {
+  display : flex;
+  justify-content:right;
+  align-items: end;
+  gap:15px;
+  margin-top: 8px;
+
+}
+
+.add-task-btn{
+  border-radius:5px;
+  border:none;
+  cursor: pointer;
+  font-size:12px;
+  transition: all 0.2s ease;
+}
+
+.add-btn {
+  background-color: #7357e8;
+  color: white;
+  padding : 10px 17px;
+}
+
+.add-btn:hover {
+  background-color: #5d42d1;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.cancel-btn {
+  background-color: white;
+  color: #333;
+  border:1px solid rgba(128, 128, 128, 0.452);
+  padding : 9px 17px;
+}
+
+.cancel-btn:hover {
+  background-color: #e2e2e2;
+  transform: translateY(-1px);
+}
+

@@ -1,0 +1,13 @@
+.task-page {
+  display : flex ;
+  flex-direction: column;
+}
+
+.add-task-page{
+  position:fixed;
+  inset:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index:1000; 
+}

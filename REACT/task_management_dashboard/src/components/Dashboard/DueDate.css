@@ -1,0 +1,39 @@
+.duedate-sec {
+ background-color: white;
+ padding : 20px;
+ border-radius : 10px;
+ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+ height : 290px;
+}
+
+
+.duedate-hdr {
+  margin-bottom : 10px;
+}
+
+.empty-due-today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #dbe4f3;
+  border-radius: 12px;
+  background-color: #f8fbff;
+}
+
+.empty-due-today h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000408;
+}
+
+.empty-due-today p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}

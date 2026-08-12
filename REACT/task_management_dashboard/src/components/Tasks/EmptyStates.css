@@ -1,0 +1,16 @@
+.empty-state-container{
+  display : flex ;
+  flex-direction :column;
+  align-items: center;
+  gap : 10px;
+  background-color: white;
+  padding : 40px;
+  border-radius : 16px;
+  justify-content: center;
+  width : 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.empty-icon {
+  font-size: 40px;
+}

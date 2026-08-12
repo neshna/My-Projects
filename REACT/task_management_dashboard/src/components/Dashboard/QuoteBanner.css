@@ -1,0 +1,49 @@
+.quote-banner{
+    margin-top:10px;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:18px;
+    background:linear-gradient(
+        90deg,
+        #e3e5f8,
+        #f8f6ff
+    );
+
+    overflow:hidden;
+    position:relative;
+}
+
+.quote-content{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    z-index:2;
+}
+
+.quote-icon{
+    font-size:24px;
+    color:#4F46E5;
+}
+
+.quote-content h3{
+    margin:0;
+    font-size:15px;
+    color:#4338CA;
+}
+
+.quote-content p{
+    margin-top:12px;
+    color:#6B7280;
+    font-size:12px;
+}
+
+.target-icon{
+    font-size:80px;
+    color:#5b5ef1;
+    opacity:.18;
+    position:absolute;
+    right:35px;
+    bottom:-5px;
+}

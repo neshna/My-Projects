@@ -1,0 +1,14 @@
+.dashBoard-grid {
+  display:grid ;
+  grid-template-columns:1fr 1fr;
+  gap : 20px;
+  margin-top:10px;
+}
+
+.right-column 
+.left-column {
+  display : flex ;
+  flex-direction : column;
+  gap:20px;
+  
+}

@@ -1,0 +1,54 @@
+.stats-card {
+  display : flex ;
+  background:white;
+  width:250px;
+  border-radius:8px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 20px 30px 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.stats-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.stats-card-image{
+  font-size : 3.5rem;
+  color:blue;
+  background-color: rgb(228, 227, 236);
+  padding:15px;
+  border-radius:15px;
+}
+
+.stats-card-total{
+  color:blue
+}
+
+.stats-card-pending{
+  color:red
+}
+
+.stats-card-inprogress{
+  color:orange
+}
+
+.stats-card-completed{
+  color:green;
+}
+
+.stats-card-content {
+    display : flex ;
+    flex-direction:column;
+    gap:5px;
+}
+
+.stats-card-content p {
+  font-size : 0.8rem;
+}
+
+.stats-card-content h3{
+  font-size : 2rem;
+}

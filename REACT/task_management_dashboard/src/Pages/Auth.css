@@ -1,0 +1,122 @@
+.login-layout{
+  background: linear-gradient(135deg,#06195a,#2bdfff);
+  height : 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group{
+  width : 350px;
+}
+
+.login-card{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width : 400px;
+  gap:15px;
+  background-color: white;
+  border-radius: 20px;
+  padding : 30px;
+  box-shadow:0 12px 35px rgba(0,0,0,.18);
+}
+
+.login-card label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.forgt-pass{
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  font-size: 13px;
+  color: #007bff;
+}
+
+.sign-up{
+  text-decoration: none;
+   color: #007bff;
+}
+
+.login-input-container{
+  display:flex;
+  flex-direction:column;
+  width:350px;
+  gap:2px;
+  position: relative;
+  
+}
+
+.input-icon{
+  position: absolute;
+  top:34px;
+  width:50px;
+  left:0px;
+}
+
+.eye-icon{
+  position:absolute;
+  top: 34px;
+  right:10px;
+  cursor: pointer;
+
+}
+
+.input {
+  border: black solid 1px;
+  border-radius: 10px;
+  padding:0px 35px;
+  height:48px;
+}
+
+.error-input {
+  border : 1px solid red;
+}
+
+
+input:focus{
+    border:2px solid #ff416c;
+}
+
+.login-input ::placeholder {
+  color : gray
+}
+
+.login-card button {
+  background-color:rgba(5, 5, 43, 0.993);
+   color:white;
+   border :none;
+   border-radius:25px;
+   width:150px;
+   padding:8px;
+   font-size:17px;
+   cursor: pointer;
+   height:48px;
+   font-weight:600;
+}
+
+.login-card button:hover{
+    transform:translateY(-2px);
+    transition:.3s;
+    background-color:rgba(23, 23, 196, 0.863);
+}
+
+.success {
+  color : green;
+  font-size:13px;
+}
+
+.error1 {
+  color : red;
+  font-size:13px;
+}
+
+.password-strength{
+   font-size: 13px;
+}
+
+
+

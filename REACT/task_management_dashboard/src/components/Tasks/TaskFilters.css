@@ -1,0 +1,49 @@
+.task-filter-section{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width : 1120px;
+  background-color: white;
+  padding : 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.inputs {
+  padding : 5px;
+}
+
+.form-inputs {
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+.form-inputs input {
+  width:350px;
+  border-radius:5px; 
+  border: solid grey 1px;
+  padding:10px 10px 10px 40px;
+}
+
+.form-inputs label{
+  font-size: 13px;
+  color:rgb(63, 62, 62);
+  font-weight:600;
+}
+
+.combo-control {
+  width : 200px;
+  border-radius:5px;  
+}
+
+.icon-pos{
+  position: relative;
+}
+
+.icon{
+  position : absolute;
+  top:9px;
+  left:12px;
+}
